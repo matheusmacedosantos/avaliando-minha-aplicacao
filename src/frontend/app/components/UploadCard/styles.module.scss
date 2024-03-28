@@ -1,0 +1,83 @@
+.card {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.4rem;
+  border-radius: 0.4rem;
+  background-color: var(--white);
+
+}
+
+.button {
+    padding: .7rem 1.5rem;
+    font-size: medium;
+    font-weight: 600;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+}
+
+.endrow_align {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  border: 1px dashed var(--secondary);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 1.6rem;
+
+  &:hover {
+    background-color: var(--secondary-2);
+  }
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--secondary);
+  }
+
+}
+
+.uploadLabel {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 0.4rem;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fileInput {
+  display: none;
+}
+
+.selectedFiles {
+  margin-top: 20px;
+
+  .fileItem {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
